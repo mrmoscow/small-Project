@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 print ("Test the")
-
+print ("這是中文")
 
 arr = np.array( [[ 1, 2, 3],[ 4, 2, 5]] )
 
@@ -24,7 +24,7 @@ print("Array stores elements of type: ", arr.dtype)
 
 
 s = pd.Series([1, 3, 5, np.nan, 6, 8])
-dates = pd.date_range("20130101", periods=6)
+dates = pd.date_range("20230528", periods=6)
 
 print(s)
 print(dates)
