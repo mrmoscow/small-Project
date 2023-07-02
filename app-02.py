@@ -5,6 +5,8 @@ from dash.exceptions import PreventUpdate
 import os
 import openai
 
+#author: 顏聖峰
+#適用dash 語言，開啟本地端web 應用
 
 openai.api_key = os.getenv("OPENAI_KEY_AIGO23")
 
@@ -28,11 +30,11 @@ def Eng2Chi(text):
 app = Dash(__name__,title='英文文摘中文摘要網')
 
 app.layout = html.Div([
-    html.H1('OpenAI 英文文稿-中文結論轉換頁面'),
+    html.H1('OpenAI 作業-英文文稿-中文結論轉換頁面'),
     #html.Div(children='Hello World')
     dcc.Textarea(
         id='textarea-input',
-        value='清輸入英文文章\n',
+        value='請清除此行，並在這邊輸入英文文章\n',
         style={'width': '45%', 'height': 300, 'margin-left':'3%',},
     ),
     html.Div(
