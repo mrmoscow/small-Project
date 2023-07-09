@@ -27,22 +27,21 @@ http://123.194.118.43:8053/
 Please E-mail to: mrmocow@gmail.com
 
 ## for 應用1
-    ###input,  一段英文文章
-    ####output, 一段中文摘要
+    input,  一段英文文章,output, 一段中文摘要
 ## for 應用2
-    ####input, 上傳mp3 檔案
-    ####output,  兩個srt 檔案，一段中英文對照
+    input, 上傳mp3 檔案,output,  兩個srt 檔案，一段中英文對照
 ## note
-    ####1. 應用二中 請務必上傳mp3 檔案 之後會加入判斷機制
-    ####2. 應用二中 上傳mp3 檔案後，需要時間解析 請稍候 可由網頁瀏覽器上 看uploading 是否繼續執行
+    1. 應用二中 請務必上傳mp3 檔案 之後會加入判斷機制
+    2. 應用二中 上傳mp3 檔案後，需要時間解析 請稍候 可由網頁瀏覽器上 看uploading 是否繼續執行
 
-##if you can not run the code well
-    ###1. change the openai.api_key
-    ###2. 由於應用二需要上傳且處理檔案 需要絕對路徑 change the UPLOAD_DIRECTORY, server.route, and location (under def file_download_link)
-    ###3. run app-02 for just base part
+## if you can not run the code well
+    1. change the openai.api_key
+    2. 由於應用二需要上傳且處理檔案 需要絕對路徑 change the UPLOAD_DIRECTORY, server.route, and location (under def file_download_link)
+    3. run app-02 for just base part
 
 ## License
 For open source projects, say how it is licensed.
 
 ## Project status
-keep working for high score.
+    1. not mp3 file case
+    2. more clear when waitting
