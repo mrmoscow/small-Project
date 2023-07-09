@@ -1,27 +1,27 @@
 # AIGO-2023
-for  AIGO-2023-NLP-openAI
-
-
-
-# AIGO-2023-HW
-This is a small project for HomeWork of class Open AI API 之自然語言處理入門與實務
+This is a small home work project for class Open AI API 之自然語言處理入門與實務
+AIGO-2023-NLP-openAI
 
 ## Requirest python package
 
 - [ ] [Dash](https://dash.plotly.com/)
 - [ ] [OpenAI](https://github.com/openai/openai-python)
 - [ ] [ffmpeg](https://ffmpeg.org/)
+- [ ] [openAI-whisper](https://pypi.org/project/openai-whisper/)
 
 + openai                   0.27.8
 + dash                     2.11.0
 + dash-core-components     2.0.0
 + dash-html-components     2.0.0
 + dash-table               5.0.0
-+ whisper                  1.1.10       
++ whisper                  20230314    
 
 ## 使用方式
 http://123.194.118.43:8053/
 或者你在本地端執行 python ./app.py 使用瀏覽器開啟http://0.0.0.0:8053/
+
+## 介紹影片
+[youtube 影片](https://youtu.be/R5tZKz1E5iw)
 
 ## Support
 Please E-mail to: mrmocow@gmail.com

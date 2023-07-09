@@ -33,7 +33,7 @@ from flask import Flask, send_from_directory
 
 #if you can not run the code well
     #1. change the openai.api_key
-    #2. change the UPLOAD_DIRECTORY, server.route, and location (under def file_download_link)
+    #2. 由於應用二需要上傳且處理檔案 需要絕對路徑 change the UPLOAD_DIRECTORY, server.route, and location (under def file_download_link)
     #3. run app-02 for just base part
 
 UPLOAD_DIRECTORY = "/Users/sfyen/GDisk/Learning/pythonLearn/AIGO-2023/files"
@@ -51,7 +51,6 @@ app = dash.Dash(server=server,title='英文文摘中文摘要網')
 
 
 def Eng2Chi(text):
-    #openai.api_key = os.getenv("OPENAI_KEY_AIGO23")
     response = openai.Completion.create(
         engine="text-davinci-003",
         prompt=f"請給我下面文章的繁體中文摘要: {text}",
@@ -63,7 +62,6 @@ def Eng2Chi(text):
     return(translation)
 
 def Eng22Chi(text):
-    #openai.api_key = os.getenv("OPENAI_KEY_AIGO23")
     response = openai.Completion.create(
         engine="text-davinci-003",
         prompt=f"Translate English into 繁體中文: {text}",
@@ -168,7 +166,6 @@ def uploaded_files():
 def file_download_link(filename):
     """Create a Plotly Dash 'A' element that downloads a file from the app."""
     location = "/Users/sfyen/GDisk/Learning/pythonLearn/AIGO-2023/{}".format(urlquote(filename))
-    #location = os.path.dirname(os.path.abspath(__file__))+"/files/{}".format(urlquote(filename))
     return html.A(filename, href=location)
 
 
@@ -181,8 +178,6 @@ def update_output(uploaded_filenames, uploaded_file_contents):
     if uploaded_filenames is not None and uploaded_file_contents is not None:
         for name, data in zip(uploaded_filenames, uploaded_file_contents):
             save_file(name, data)
-            #print(name)
-            #transcribe_audio(name)
         print(name)
         mp3text=transcribe_audio(name)
     else:
@@ -208,5 +203,4 @@ def update_output2(n_clicks, value):
         return '中文摘要是: \n{}'.format(a)
 
 if __name__ == "__main__":
-    print(os.path.dirname(os.path.abspath(__file__)))
     app.run_server(debug=True,host='0.0.0.0',port='8053')
