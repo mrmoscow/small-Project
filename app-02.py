@@ -20,7 +20,7 @@ openai.api_key = os.getenv("OPENAI_KEY_AIGO23")
 def Eng2Chi(text):
     response = openai.Completion.create(
         engine="text-davinci-003",
-        #engine="text-gpt-4",
+        #engine="gpt-3.5-turbo",
         #prompt=f"Translate English into 繁體中文: {text}",
         prompt=f"請給我下面文章的繁體中文摘要: {text}",
         #prompt = f"Summarize the following English article into traditional Chinese:\n\n{text}",
