@@ -1,4 +1,4 @@
-# AIGO-2023
+#AIGO-2023
 This is a small home work project for class Open AI API 之自然語言處理入門與實務
 AIGO-2023-NLP-openAI
 
