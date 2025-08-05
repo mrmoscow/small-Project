@@ -1,0 +1,61 @@
+[remote "origin"]
+    url = https://github.com/mrmoscow/LST.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+[user]
+    email = mrmoscow@gmail.com
+    name = SF Yen
+
+
+commit 7cd892320bd3a53f01de1c8c5db4ca7875a6aff8 (HEAD -> main, origin/main)
+Merge: aab78d3 7393352
+Author: SF Yen <mrmoscow@gmail.com>
+Date:   Mon Mar 27 12:07:59 2023 +0800
+
+    Merge branch 'main' of https://github.com/mrmoscow/LST
+
+    A smaill bug in the sun.py
+
+commit aab78d3663db1217e86c102f3a798ebf7781bf7c
+Author: SF Yen <mrmoscow@gmail.com>
+Date:   Mon Mar 27 12:07:51 2023 +0800
+
+    a small bug in sun.py
+
+commit 739335259dead5b9bee934128fc3cb88f5f83249
+Author: mrmoscow <53458856+mrmoscow@users.noreply.github.com>
+Date:   Mon Mar 27 12:07:01 2023 +0800
+
+    Update README.md
+
+commit 553862b07c6f55d9e236a91a4b607309972d52f4
+Author: SF Yen <mrmoscow@gmail.com>
+Date:   Mon Mar 27 12:00:53 2023 +0800
+
+    a new class
+
+commit 7c7622fe18593f5a6f3a120355ffa7f9aca0db45
+Author: SF Yen <mrmoscow@gmail.com>
+Date:   Thu Mar 23 16:23:22 2023 +0800
+
+    print to Python3  version
+
+commit 1babd52ff3e8fabf6d6d2d7fef050e3240c59c45
+Merge: b88656c f4b4071
+Author: SF Yen <mrmoscow@gmail.com>
+Date:   Wed Mar 22 16:37:15 2023 +0800
+
+    Merge branch 'main' of https://github.com/mrmoscow/LST
+
+commit b88656c8dacd976eeaae13df4029cc340b877d03
+Author: mrmoscow <mrmoscow@gmail.com>
+Date:   Wed Mar 22 16:09:42 2023 +0800
+
+    from old code, in python2 format, want to change to Python3 soon
+
+commit f4b40710e18f6751c74e2b4e90630d69413f1ba0
+Author: mrmoscow <53458856+mrmoscow@users.noreply.github.com>
+Date:   Wed Mar 22 15:52:37 2023 +0800
+
+    Initial commit
+
+
