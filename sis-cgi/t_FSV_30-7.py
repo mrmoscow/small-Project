@@ -253,7 +253,7 @@ class SpectrumPlot(QWidget):
             self.inst.write("G:")
             response1 = self.inst.read()
 
-            response2 = self.inst.read()
+            #response2 = self.inst.read()
         except Exception as e:
             QMessageBox.critical(self, "錯誤", f":{str(e)}")
 
@@ -272,7 +272,7 @@ class SpectrumPlot(QWidget):
             self.inst.write("G:")
             response1 = self.inst.read()
 
-            response2 = self.inst.read()
+            #response2 = self.inst.read()
         except Exception as e:
             QMessageBox.critical(self, "錯誤", f":{str(e)}")
 

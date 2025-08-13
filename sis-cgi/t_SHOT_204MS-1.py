@@ -26,10 +26,10 @@ class GPIBApp(QWidget):
             print("Available deivce：", resources)
 
             if not resources:
-                QMessageBox.warning(self, "Error", "Can not find any VISA device")                return
+                QMessageBox.warning(self, "Error", "Can not find any VISA device")
+                return
 
-            # 假設你使用 GPIB0::18::INSTR（請視實際情況修改）
-            inst = rm.open_resource("GPIB0::18::INSTR")
+            inst = rm.open_resource("GPIB0::8::INSTR")
             idn = inst.query("*IDN?")
             inst.close()
 
